@@ -1,0 +1,196 @@
+:root {
+    --blue: #01B6EB;
+    --dark: #45566B;
+    --dark1: #45566D;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header {
+    height: 35px;
+    border-width: 2px !important;
+    cursor: default;
+}
+
+.main-container {
+    height: 100vh;
+    color: black;
+}
+
+/* left panel */
+.row1>.wrapper {
+    height: 100px;
+}
+
+.row1>h4 {
+    color: var(--dark);
+}
+
+.row1 .overviews {
+    cursor: default;
+
+    background-color: var(--navIconActive);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    color: var(--blue);
+}
+
+.row1 .overviews small {
+    font-size: 10px;
+    color: var(--dark1);
+}
+
+.row2>.scroll-wrapper {
+    height: 430px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.row2>.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.row2>h4 {
+    color: var(--dark);
+}
+
+.current-orders {
+    height: fit-content;
+    border-radius: 10px;
+
+    background-color: var(--navIconActive);
+    color: var(--dark1);
+}
+
+.current-orders h6 {
+    color: var(--blue);
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.current-orders p {
+    font-size: 14px;
+    height: 60px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    text-align: justify;
+    user-select: none;
+
+    cursor: pointer;
+}
+
+.current-orders p::-webkit-scrollbar {
+    display: none;
+}
+
+.open-feedback {
+    border: none;
+    border-radius: 100%;
+    background-color: transparent;
+    color: var(--blue);
+}
+
+.open-feedback:focus {
+    border: none;
+    outline: none;
+}
+
+.current-orders button:hover {
+    opacity: 0.8;
+}
+
+/* form */
+form {
+    display: none;
+}
+
+form>h5 {
+    font-size: 18px;
+    color: var(--dark);
+}
+
+form textarea {
+    resize: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+form textarea::placeholder {
+    font-size: 14px;
+}
+
+.form-check-label {
+    font-size: 12px;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+form button {
+    height: 25px;
+    width: 100px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: var(--blue);
+    color: var(--navIconActive);
+}
+
+
+/* right panel */
+.info {
+    border-radius: 10px;
+    background-color: var(--navIconActive);
+    background-color: var(--blue);
+    color: white;
+}
+
+.user-image {
+    object-fit: contain;
+    height: 100px;
+}
+
+.info>h5, .info>h6 {
+    overflow-y: hidden;
+    overflow-x: auto;
+    user-select: none;
+}
+
+.info>h5::-webkit-scrollbar, .info>h6::-webkit-scrollbar {
+    display: none;
+}
+
+.completed-orders,
+.pending-orders {
+    background-color: var(--navIconActive);
+    border-radius: 10px;
+    height: 150px;
+}
+
+.orders-number {
+    width: 80px;
+    height: 80px;
+
+    margin: 0px auto;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    border: 6px solid var(--blue);
+}

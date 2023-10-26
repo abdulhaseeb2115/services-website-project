@@ -1,0 +1,77 @@
+:root {
+    --blue: #01B6EB;
+    --yellow: #FFC233;
+    --dark: #45566B;
+    --dark1: #45566D;
+}
+
+.main-container {
+    height: 100vh;
+    position: relative;
+}
+
+.header {
+    height: 35px;
+    border-width: 2px !important;
+    cursor: default;
+}
+
+.settings-form {
+    width: 500px;
+    height: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--navIconActive);
+    border-radius: 10px;
+}
+
+select {
+    width: 80%;
+    padding: 5px;
+
+    color: var(--blue);
+    border-radius: 5px;
+    border: 1px solid #01B6EB;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 5px;
+
+    resize: none;
+    border: 1px solid #01B6EB;
+    border-radius: 5px;
+}
+
+textarea::placeholder {
+    color: var(--blue);
+    font-size: 15px;
+}
+
+textarea:focus, select:focus {
+    border-width: 2px;
+    outline: none;
+}
+
+button {
+    border: none;
+    color: var(--navIconActive);
+    background-color: var(--blue);
+    width: 40%;
+    height: 35px;
+    border-radius: 20px;
+}
+
+button:hover {
+    opacity: 0.7;
+}

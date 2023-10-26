@@ -1,0 +1,53 @@
+:root {
+    --blue: #01B6EB;
+}
+
+.header {
+    height: 35px;
+    border-width: 2px !important;
+    /* color: #45566B; */
+    cursor: default;
+}
+
+
+.completed-orders {
+    height: 180px;
+    border-radius: 10px;
+
+    background-color: var(--navIconActive);
+    color: #45566D;
+}
+
+.completed-orders h6 {
+    color: #01B6EB;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.completed-orders p {
+    font-size: 14px;
+    height: 80px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    text-align: justify;
+    user-select: none;
+
+    cursor: pointer;
+}
+
+.completed-orders p::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-wrapper {
+    height: 600px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}

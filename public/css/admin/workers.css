@@ -1,0 +1,215 @@
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+
+    color: var(--navIconActive);
+    padding: 10px 20px;
+}
+
+.mainContainer {
+    height: 400px;
+    width: 90%;
+
+    margin: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.add, .suspend {
+    height: 100%;
+    min-width: 500px;
+    width: 40%;
+
+    background-color: var(--overlays);
+    border-radius: 15px;
+
+    padding: 30px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    color: var(--navIconActive);
+    margin-left: 10px;
+}
+
+.addWorkerForm {
+    height: 75%;
+    width: 85%;
+
+    margin: 0px auto 0px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.addWorkerForm input,
+.addWorkerForm select {
+    height: 25px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
+    border: none;
+    border-bottom: 2px solid var(--lightGray);
+
+    background-color: transparent;
+    color: var(--navIconActive);
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.addWorkerForm input::placeholder {
+    text-transform: uppercase;
+}
+
+.addWorkerForm input:focus,
+.addWorkerForm select:focus {
+    outline: none;
+    border-color: #9656FF;
+}
+
+.addWorkerForm button {
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 5px 15px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #179CE6;
+    color: var(--navIconActive);
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+.addWorkerForm select option {
+
+    background-color: var(--overlays);
+    border: none;
+    outline: none;
+
+    color: #179CE6;
+}
+
+.suspendWorker {
+    height: 80%;
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+
+    height: 30px;
+    padding-left: 20px;
+
+    background-color: var(--lightGray);
+    border-radius: 20px;
+}
+
+.top>input {
+    border: none;
+    width: 80%;
+
+    background-color: transparent;
+    color: var(--navIconActive);
+
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.top>input:focus {
+    outline: none;
+}
+
+.top>input::placeholder {
+    color: var(--navIcon);
+}
+
+.top>button {
+    background-color: transparent;
+    width: 20%;
+
+    border-radius: 20px;
+    border: none;
+
+    color: var(--navIconActive);
+    background-color: #179CE6;
+
+    cursor: pointer;
+}
+
+.bottom {
+    width: 100%;
+    height: 60%;
+
+    padding: 20px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--lightGray);
+    border-radius: 15px;
+}
+
+.bottom>input {
+    border: none;
+
+    background-color: transparent;
+    color: var(--navIconActive);
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+.bottom button {
+    /* margin-left: auto; */
+    margin-top: auto;
+    padding: 5px 15px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #179CE6;
+    color: var(--navIconActive);
+
+    font-weight: bold;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
